@@ -81,5 +81,6 @@ text-size: 30px;
 <div class="footer">
 <p>Developed ❤ by Rishabh <a style='display: block; text-align: center;' href="https://www.twitter.com/rishabh_55/" target="_blank">Rishabh Rathore</a></p>
 </div>
+
 """
 st.markdown(footer,unsafe_allow_html=True)
