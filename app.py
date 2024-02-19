@@ -38,6 +38,48 @@ st.write("""
 st.line_chart(ticker_df['Close'])
 
 st.write("""
+## Highest Prices thought a day
+""")
+st.line_chart(ticker_df['High'])
+
+st.write("""
 ## Volume of Shares traded each day
 """)
 st.line_chart(ticker_df['Volume'])
+
+
+hide_streamlit_style = """
+            <style>
+            #MainMenu {visibility: hidden;}
+            footer {visibility: hidden;}
+            </style>
+            """
+st.markdown(hide_streamlit_style, unsafe_allow_html=True)
+footer="""<style>
+a:link , a:visited{
+color: yellow;
+background-color: transparent;
+text-decoration: underline;
+}
+
+a:hover,  a:active {
+color: white;
+# background-color: transparent;
+text-decoration: underline;
+}
+
+.footer {
+position: fixed;
+left: 0;
+bottom: 0;
+width: 100%;
+color: white;
+text-align: center;
+text-size: 30px;
+}
+</style>
+<div class="footer">
+<p>Developed ❤ by Rishabh <a style='display: block; text-align: center;' href="https://www.twitter.com/rishabh_55/" target="_blank">Rishabh Rathore</a></p>
+</div>
+"""
+st.markdown(footer,unsafe_allow_html=True)
