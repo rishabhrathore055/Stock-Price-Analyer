@@ -1,6 +1,8 @@
 import pandas as pd
 import streamlit as st
 import yfinance as yf
+# from yahoofinancials import YahooFinancials
+
 import datetime
 
 st.write(
