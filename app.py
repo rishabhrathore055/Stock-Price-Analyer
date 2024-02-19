@@ -38,6 +38,12 @@ st.write("""
 st.line_chart(ticker_df['Close'])
 
 st.write("""
+## Highest Prices thought a day
+""")
+st.line_chart(ticker_df['High'])
+
+st.write("""
 ## Volume of Shares traded each day
 """)
 st.line_chart(ticker_df['Volume'])
+
